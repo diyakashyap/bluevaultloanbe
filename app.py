@@ -3,7 +3,7 @@ import mysql.connector
 import os
 import logging
 
-app = Flask(__name__) #
+app = Flask(__name__) 
 
 # ✅ Configure logging for better debugging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s: %(message)s')
