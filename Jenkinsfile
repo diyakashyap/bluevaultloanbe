@@ -12,7 +12,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Point to the backend repository
-                git branch: 'master', url: 'https://github.com/diyakashyap/loanbackend.git'
+                git branch: 'master', url: 'https://github.com/diyakashyap/bluevaultloanbe.git'
             }
         }
 
