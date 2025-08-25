@@ -46,7 +46,7 @@ pipeline {
                     // Use kubectl apply to deploy the new version
                     // This command will require you to have deployment.yaml and svc.yaml files
                     // and a sed command to replace the image tag.
-                    //sh "kubectl set image deployment/$KUBERNETES_DEPLOYMENT loan-backend=$DOCKER_IMAGE:$TAG"
+                    sh "kubectl set image deployment/$KUBERNETES_DEPLOYMENT loan-backend=$DOCKER_IMAGE:$TAG"
                 }
             }
         }
